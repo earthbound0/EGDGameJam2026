@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="Workspace" id="{969d34d9-0a0e-49b7-93e1-ef8551513da2}">
+		<property name="builtBanksOutputDirectory">
+			<value>../../../../../Documents/GitHub/EGDGameJam2026/FMOD</value>
+		</property>
+		<relationship name="masterEventFolder">
+			<destination>{dd37c4c5-1bf5-416e-b5d0-ea5b0f5d33c8}</destination>
+		</relationship>
+		<relationship name="masterTagFolder">
+			<destination>{c5700c11-29e0-4bbb-90fc-ebb6f4c084c2}</destination>
+		</relationship>
+		<relationship name="masterEffectPresetFolder">
+			<destination>{536d30c0-1f76-46f2-bc0b-921bee194adb}</destination>
+		</relationship>
+		<relationship name="masterParameterPresetFolder">
+			<destination>{c478b198-d11a-485c-9182-abfd39494f86}</destination>
+		</relationship>
+		<relationship name="masterBankFolder">
+			<destination>{98733e8f-2d51-468f-abbe-69877d07ef1f}</destination>
+		</relationship>
+		<relationship name="masterSandboxFolder">
+			<destination>{6b498da9-859a-4d1f-8aa0-e448bbc09a81}</destination>
+		</relationship>
+		<relationship name="masterAssetFolder">
+			<destination>{dd8934e2-e259-4854-b79e-7aaeb4763897}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{7ac3a98a-84be-4360-9a58-dd4f831a200f}</destination>
+		</relationship>
+		<relationship name="profilerSessionFolder">
+			<destination>{2709bc5e-b0f5-435f-a837-17410a379fe1}</destination>
+		</relationship>
+		<relationship name="platforms">
+			<destination>{b581c5a8-163f-48f4-9f04-2901ec7ab5b3}</destination>
+		</relationship>
+	</object>
+</objects>
