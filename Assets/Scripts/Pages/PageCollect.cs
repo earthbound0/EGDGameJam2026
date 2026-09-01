@@ -31,13 +31,17 @@ public class PageCollect : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        pagesCollected = 0;
+    }
+
     void Update()
     {
         if(interactable == true)
         {
             if (Input.GetMouseButtonDown(0))
             {
-                PickupSound.Play();
                 pagesCollected = pagesCollected + 1;
                 collectText.text = pagesCollected + "/10 pages";
                 collectTextObj.SetActive(true);
