@@ -1,10 +1,17 @@
 using UnityEngine;
+using FMODUnity;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject player;
+    [SerializeField] EventReference FootstepEvent;
+    public float FSrate = 1.5f;
+    private float tiiime = 0f;
+
     [Header("Movement")]
     public float MoveSpeed;
     public Transform Orientation;
+    private bool moving = false;
 
     float HorizontalInput;
     float VerticalInput;
@@ -19,11 +26,13 @@ public class PlayerMovement : MonoBehaviour
     public float GroundCheckDistance = 0.2f;
     public LayerMask GroundLayer;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        
     }
 
     // Update is called once per frame
@@ -31,8 +40,22 @@ public class PlayerMovement : MonoBehaviour
     {
         MyInput();
         SpeedControl();
-
         rb.linearDamping = GroundDrag;
+
+        tiiime += Time.deltaTime;
+        if(moving)
+        {
+            if(tiiime >= FSrate)
+            {
+                Footsteps();
+                tiiime = 0f;
+            }
+        }
+    }
+
+    public void Footsteps()
+    {
+        RuntimeManager.PlayOneShotAttached(FootstepEvent, player);
     }
 
     void FixedUpdate()
@@ -45,6 +68,14 @@ public class PlayerMovement : MonoBehaviour
     {
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
+        if(HorizontalInput == 0 && VerticalInput == 0)
+        {
+            moving = false;
+        }
+        else
+        {
+            moving = true;
+        }
     }
 
     private void MovePlayer()

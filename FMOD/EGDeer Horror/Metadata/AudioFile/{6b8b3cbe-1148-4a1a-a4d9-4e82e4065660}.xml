@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{6b8b3cbe-1148-4a1a-a4d9-4e82e4065660}">
+		<property name="assetPath">
+			<value>Footsteps/Footsteps, Human, Wood, Run SND62083 S09 3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.28120833333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dd8934e2-e259-4854-b79e-7aaeb4763897}</destination>
+		</relationship>
+	</object>
+</objects>
