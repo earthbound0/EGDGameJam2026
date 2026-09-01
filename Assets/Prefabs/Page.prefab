@@ -70,7 +70,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b7cd3728ed668de44a0b9f2171dde399, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   intText: {fileID: 0}
   interactable: 0
   collectText: {fileID: 0}
+  PickupSound: {fileID: 0}
   page: {fileID: 490787773750333261}
   PageCollectSound:
     Guid:
