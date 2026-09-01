@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class PageCollect : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class PageCollect : MonoBehaviour
     public bool interactable;
     public static int pagesCollected;
     public Text collectText;
+
+    public GameObject page;
+    [SerializeField] EventReference PageCollectSound;
 
     void OnTriggerStay(Collider other)
     {
@@ -39,6 +43,8 @@ public class PageCollect : MonoBehaviour
                 intText.SetActive(false);
                 this.gameObject.SetActive(false);
                 interactable = false;
+
+                CollectSound();
             }
         }
 
@@ -47,5 +53,10 @@ public class PageCollect : MonoBehaviour
             SceneManager.LoadScene("Win Screen");
         }
 
+    }
+
+    public void CollectSound()
+    {
+        RuntimeManager.PlayOneShotAttached(PageCollectSound, page);
     }
 }

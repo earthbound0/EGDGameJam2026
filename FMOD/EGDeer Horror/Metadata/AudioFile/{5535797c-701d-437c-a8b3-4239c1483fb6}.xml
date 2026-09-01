@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5535797c-701d-437c-a8b3-4239c1483fb6}">
+		<property name="assetPath">
+			<value>Deer Footsteps/Footsteps, Human, Frozen Wood, Terrace, Walk SND159788 S15 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5278437499999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dd8934e2-e259-4854-b79e-7aaeb4763897}</destination>
+		</relationship>
+	</object>
+</objects>
