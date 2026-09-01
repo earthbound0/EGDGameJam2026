@@ -15,12 +15,12 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 1
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0.85882354, g: 0.8235294, b: 0.59607846, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.05
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.101162925, g: 0.13526045, b: 0.20754719, a: 1}
+  m_AmbientSkyColor: {r: 0.05983405, g: 0.039215688, b: 0.09411765, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -21487,7 +21487,7 @@ Transform:
   m_GameObject: {fileID: 591214171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.0001745224, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13000044, y: 0.23300001, z: 0.007674961}
+  m_LocalPosition: {x: -0.13, y: 0.23300001, z: 0.00887}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30914,7 +30914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7271911460075369215, guid: 9ad2cc4067652894d9c60161bee589b9, type: 3}
       propertyPath: patrolPoints.Array.size
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7271911460075369215, guid: 9ad2cc4067652894d9c60161bee589b9, type: 3}
       propertyPath: chasePersistenceDuration
@@ -30988,6 +30988,10 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[16]'
       value: 
       objectReference: {fileID: 749851801}
+    - target: {fileID: 7271911460075369215, guid: 9ad2cc4067652894d9c60161bee589b9, type: 3}
+      propertyPath: 'patrolPoints.Array.data[17]'
+      value: 
+      objectReference: {fileID: 1622645428}
     - target: {fileID: 7312360497274269441, guid: 9ad2cc4067652894d9c60161bee589b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.541012
@@ -50297,6 +50301,7 @@ Transform:
   - {fileID: 1109664827}
   - {fileID: 185729927}
   - {fileID: 749851801}
+  - {fileID: 1622645428}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1417532409
@@ -56975,6 +56980,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615066461}
   m_Mesh: {fileID: -6409513020306505536, guid: bdc766a0198cd9448b58a9c7998b6231, type: 3}
+--- !u!1 &1622645427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622645428}
+  m_Layer: 0
+  m_Name: Patrol1 (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622645428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622645427}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.873, y: -1.48, z: 7.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1414662389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1623721016
 GameObject:
   m_ObjectHideFlags: 0
