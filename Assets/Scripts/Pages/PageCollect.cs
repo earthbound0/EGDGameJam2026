@@ -8,6 +8,7 @@ public class PageCollect : MonoBehaviour
     public bool interactable;
     public static int pagesCollected;
     public Text collectText;
+    public AudioSource PickupSound;
 
     void OnTriggerStay(Collider other)
     {
@@ -32,6 +33,7 @@ public class PageCollect : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                PickupSound.Play();
                 pagesCollected = pagesCollected + 1;
                 collectText.text = pagesCollected + "/10 pages";
                 collectTextObj.SetActive(true);

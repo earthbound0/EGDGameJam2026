@@ -130,6 +130,7 @@ MonoBehaviour:
   intText: {fileID: 0}
   interactable: 0
   collectText: {fileID: 0}
+  PickupSound: {fileID: 0}
 --- !u!54 &1712371436126219494
 Rigidbody:
   m_ObjectHideFlags: 0

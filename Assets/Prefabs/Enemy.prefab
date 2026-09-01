@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3118074272463734979}
   - component: {fileID: 268334768589423931}
   - component: {fileID: 7271911460075369215}
+  - component: {fileID: 1581088621901029985}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -152,11 +153,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GuardStateMachine
   currentState: 0
   playerTransform: {fileID: 0}
-  patrolViewDistance: 10
-  patrolViewAngle: 45
-  alertViewDistance: 15
-  alertViewAngle: 60
-  confusedViewDistance: 12
+  patrolViewDistance: 8
+  patrolViewAngle: 40
+  alertViewDistance: 10
+  alertViewAngle: 20
+  confusedViewDistance: 9
   confusedViewAngle: 90
   alertDuration: 1.07
   patrolPoints:
@@ -164,6 +165,31 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   searchDelay: 1.5
-  chasePersistenceDuration: 3
+  chasePersistenceDuration: 5
   showDebugGizmos: 1
+--- !u!114 &1581088621901029985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163210608607633983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6871fcd347ef98b44ba733f3d3e262bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
